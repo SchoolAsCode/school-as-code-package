@@ -28,7 +28,7 @@ const configs = await parseConfigs(configAbsolutePath, env);
 // --- prepare assets path & directory ---
 
 const assetsAbsolutePath = path.join(process.cwd(), ...env.assetsPath);
-if (!fs.existsSync(assetsAbsolutePath)) {
+if (!fs.existsSync(assetsAbsolutePath, { recursive: true })) {
   fs.mkdirSync(assetsAbsolutePath);
 }
 
