@@ -1,0 +1,35 @@
+{
+  "name": "school-as-code-package",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "bin": {
+    "sac:readme": "./bin/readme.js",
+    "sac:repo": "./bin/repo.js",
+    "sac:avatars": "./bin/avatars.js",
+    "sac:configure": "./bin/configure.js",
+    "sac:projecting": "./bin/projecting.js"
+  },
+  "scripts": {
+    "try:readme": "cd ./test-content && node ../bin/readme.js u=user r=repo",
+    "try:configure": "cd ./test-content && node ../bin/configure.js <todo>",
+    "try:avatars": "cd ./test-content && node ../bin/avatars.js",
+    "try:collaborators": "cd ./test-content && node ../bin/collaborators.js",
+    "try:projecting": "cd ./test-content && node ../bin/projecting.js",
+    "try:do-everything": "cd ./test-content && node ../bin/do-everything.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/school-as-code-testing/school-as-code-package.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/school-as-code-testing/school-as-code-package/issues"
+  },
+  "homepage": "https://github.com/school-as-code-testing/school-as-code-package#readme",
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "prettier": "^2.5.1"
+  }
+}

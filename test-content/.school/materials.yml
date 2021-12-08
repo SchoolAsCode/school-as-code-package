@@ -1,0 +1,35 @@
+description: learn some javascript
+board: 1
+suggestedStudy:
+  - name: rick
+    url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+    description: roll
+  - name: rick
+    url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+  - url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+path:
+  - name: Workflows
+    chapters: 3
+    dotStudy: true
+    deliverables: true
+    url: https://github.com/HackYourFutureBelgium/workflows
+  - name: Welcome to JS
+    chapters: 3
+    dotStudy: true
+    deliverables: true
+    url: https://github.com/HackYourFutureBelgium/welcome-to-js
+  - name: Debugging
+    chapters: 5
+    dotStudy: true
+    deliverables: true
+    url: https://github.com/HackYourFutureBelgium/debugging
+  - name: Behavior, Strategy, Implementation
+    chapters: 3
+    dotStudy: true
+    deliverables: true
+    url: https://github.com/HackYourFutureBelgium/behavior-strategy-implementation
+  - name: Create a Material
+    chapters: 1
+    dotStudy: true
+    deliverables: true
+    url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
