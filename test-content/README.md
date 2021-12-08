@@ -64,7 +64,7 @@ locally.
 
 learn some javascript
 
-### [Workflows](https://github.com/HackYourFutureBelgium/workflows/.study)
+### [Workflows](https://github.com/HackYourFutureBelgium/workflows/tree/master/.study)
 
 - 3 chapters |
   [vocabulary](https://github.com/user/repo/projects/1?card_filter_query=milestone%3Aworkflows+label%3Avocabulary)
@@ -78,7 +78,7 @@ learn some javascript
   [retrospectives](https://github.com/user/repo/issues/?q=milestone%3Aworkflows+label%3Aretrospective)
   | [milestone](https://github.com/lab-antwerp-1/home/milestone/0)
 
-### [Welcome to JS](https://github.com/HackYourFutureBelgium/welcome-to-js/.study)
+### [Welcome to JS](https://github.com/HackYourFutureBelgium/welcome-to-js/tree/master/.study)
 
 - 3 chapters |
   [vocabulary](https://github.com/user/repo/projects/1?card_filter_query=milestone%3Awelcome-to-js+label%3Avocabulary)
@@ -92,7 +92,7 @@ learn some javascript
   [retrospectives](https://github.com/user/repo/issues/?q=milestone%3Awelcome-to-js+label%3Aretrospective)
   | [milestone](https://github.com/lab-antwerp-1/home/milestone/0)
 
-### [Debugging](https://github.com/HackYourFutureBelgium/debugging/.study)
+### [Debugging](https://github.com/HackYourFutureBelgium/debugging/tree/master/.study)
 
 - 5 chapters |
   [vocabulary](https://github.com/user/repo/projects/1?card_filter_query=milestone%3Adebugging+label%3Avocabulary)
@@ -106,7 +106,7 @@ learn some javascript
   [retrospectives](https://github.com/user/repo/issues/?q=milestone%3Adebugging+label%3Aretrospective)
   | [milestone](https://github.com/lab-antwerp-1/home/milestone/0)
 
-### [Behavior, Strategy, Implementation](https://github.com/HackYourFutureBelgium/behavior-strategy-implementation/.study)
+### [Behavior, Strategy, Implementation](https://github.com/HackYourFutureBelgium/behavior-strategy-implementation/tree/master/.study)
 
 - 3 chapters |
   [vocabulary](https://github.com/user/repo/projects/1?card_filter_query=milestone%3Abehavior,-strategy,-implementation+label%3Avocabulary)
@@ -120,7 +120,7 @@ learn some javascript
   [retrospectives](https://github.com/user/repo/issues/?q=milestone%3Abehavior,-strategy,-implementation+label%3Aretrospective)
   | [milestone](https://github.com/lab-antwerp-1/home/milestone/0)
 
-### [Create a Material](https://www.youtube.com/watch?v=dQw4w9WgXcQ/.study)
+### [Create a Material](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 - 1 chapter |
   [vocabulary](https://github.com/user/repo/projects/1?card_filter_query=milestone%3Acreate-a-material+label%3Avocabulary)

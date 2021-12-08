@@ -27,7 +27,8 @@ export const material = (
     .join(" ");
 
   let moduleSection = `### [${formattedName}](${
-    dotStudy ? url + "/.study" : url
+    // dotStudy ? url + "/.study" : url
+    url
   }) \n\n- `;
 
   if (typeof chapters === "number") {

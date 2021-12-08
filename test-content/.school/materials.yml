@@ -10,26 +10,21 @@ suggestedStudy:
 path:
   - name: Workflows
     chapters: 3
-    dotStudy: true
     deliverables: true
-    url: https://github.com/HackYourFutureBelgium/workflows
+    url: https://github.com/HackYourFutureBelgium/workflows/tree/master/.study
   - name: Welcome to JS
     chapters: 3
-    dotStudy: true
     deliverables: true
-    url: https://github.com/HackYourFutureBelgium/welcome-to-js
+    url: https://github.com/HackYourFutureBelgium/welcome-to-js/tree/master/.study
   - name: Debugging
     chapters: 5
-    dotStudy: true
     deliverables: true
-    url: https://github.com/HackYourFutureBelgium/debugging
+    url: https://github.com/HackYourFutureBelgium/debugging/tree/master/.study
   - name: Behavior, Strategy, Implementation
     chapters: 3
-    dotStudy: true
     deliverables: true
-    url: https://github.com/HackYourFutureBelgium/behavior-strategy-implementation
+    url: https://github.com/HackYourFutureBelgium/behavior-strategy-implementation/tree/master/.study
   - name: Create a Material
     chapters: 1
-    dotStudy: true
     deliverables: true
     url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
