@@ -1,8 +1,9 @@
 {
   "name": "school-as-code-package",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "type": "module",
+  "main": "",
   "bin": {
     "sac:readme": "./bin/readme.js",
     "sac:repo": "./bin/repo.js",

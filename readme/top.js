@@ -1,8 +1,12 @@
 export const top = ({ env = {}, materials = {} }) =>
-  `# ${env.repoName
-    .split("-")
-    .map((word) => word[0].toUpperCase() + word.slice(1))
-    .join(" ")}
+  `# ${
+    env.repoName
+      ? env.repoName
+          .split("-")
+          .map((word) => word[0].toUpperCase() + word.slice(1))
+          .join(" ")
+      : "Study Repo"
+  }
 
 > - [Issues](https://github.com/${env.userName}/${env.repoName}/issues):
 >   [\`help-wanted\`](https://github.com/${env.userName}/${
