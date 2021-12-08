@@ -1,6 +1,6 @@
 {
   "name": "school-as-code-package",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "type": "module",
   "main": "",
@@ -31,6 +31,7 @@
   "homepage": "https://github.com/school-as-code-testing/school-as-code-package#readme",
   "dependencies": {
     "js-yaml": "^4.1.0",
+    "node-fetch": "^3.1.0",
     "prettier": "^2.5.1"
   }
 }
