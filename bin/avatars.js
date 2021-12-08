@@ -27,9 +27,13 @@ const configs = await parseConfigs(configAbsolutePath, env);
 
 // --- prepare assets path & directory ---
 
-const assetsAbsolutePath = path.join(process.cwd(), ...env.assetsPath);
-if (!fs.existsSync(assetsAbsolutePath, { recursive: true })) {
-  fs.mkdirSync(assetsAbsolutePath);
+const avatarsAbsolutePath = path.join(
+  process.cwd(),
+  ...env.assetsPath,
+  "avatars"
+);
+if (!fs.existsSync(avatarsAbsolutePath, { recursive: true })) {
+  fs.mkdirSync(avatarsAbsolutePath);
 }
 
 // --- create an array of all unique user names across all user types ---
@@ -44,11 +48,7 @@ const uniqueUserNames = USER_TYPES.map((userType) => configs[userType])
 // --- fetch and save avatars ---
 
 for (const userName of uniqueUserNames) {
-  const avatarPath = path.join(
-    assetsAbsolutePath,
-    "avatars",
-    `${userName}.jpeg`
-  );
+  const avatarPath = path.join(avatarsAbsolutePath, `${userName}.jpeg`);
 
   // https://chrisfrew.in/blog/saving-images-in-node-js-using-fetch-with-array-buffer-and-buffer/
   fetch(`https://github.com/${userName}.png?size=150`)
