@@ -11,6 +11,7 @@ path:
   - name: Workflows
     chapters: 3
     deliverables: true
+    description: learn the development workflows you will need as a student and a professional.
     url: https://github.com/HackYourFutureBelgium/workflows/tree/master/.study
   - name: Welcome to JS
     chapters: 3

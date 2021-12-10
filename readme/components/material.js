@@ -7,6 +7,7 @@ export const material = (
     chapters = null,
     deliverables = false,
     milestone = 0,
+    description = "",
   }
 ) => {
   const milestoneName = name.toLowerCase().replaceAll(" ", "-");
@@ -29,7 +30,9 @@ export const material = (
   let moduleSection = `### [${formattedName}](${
     // dotStudy ? url + "/.study" : url
     url
-  }) \n\n- `;
+  })`;
+
+  moduleSection += "\n\n- ";
 
   if (typeof chapters === "number") {
     moduleSection += `${chapters} chapter${chapters === 1 ? "" : "s"} | `;
@@ -52,6 +55,10 @@ export const material = (
     " | ";
 
   moduleSection += `[milestone](https://github.com/lab-antwerp-1/home/milestone/${milestone})`;
+
+  if (description) {
+    moduleSection += " \n\n" + description;
+  }
 
   return moduleSection + "\n\n";
 };

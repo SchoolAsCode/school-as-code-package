@@ -78,6 +78,8 @@ learn some javascript
   [retrospectives](https://github.com/user/repo/issues/?q=milestone%3Aworkflows+label%3Aretrospective)
   | [milestone](https://github.com/lab-antwerp-1/home/milestone/0)
 
+learn the development workflows you will need as a student and a professional.
+
 ### [Welcome to JS](https://github.com/HackYourFutureBelgium/welcome-to-js/tree/master/.study)
 
 - 3 chapters |
