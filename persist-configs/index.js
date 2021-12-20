@@ -1,20 +1,20 @@
-import path from "path";
-import fs from "fs";
-import util from "util";
+import path from 'path';
+import fs from 'fs';
+import util from 'util';
 
-import jsYaml from "js-yaml";
+import jsYaml from 'js-yaml';
 
 const writeFile = util.promisify(fs.writeFile);
 
-export const persistConfigs = async (configBasePath = "", configs) => {
-  const configWrites = [];
-  for (const key in configs) {
-    if (key === "env") continue;
+export const persistConfigs = async (configBasePath = '', configs) => {
+    const configWrites = [];
+    for (const key in configs) {
+        if (key === 'env') continue;
 
-    const configPath = path.join(configBasePath, `${key}.yml`);
-    const ymlConfigText = jsYaml.dump(configs[key]);
+        const configPath = path.join(configBasePath, `${key}.yml`);
+        const ymlConfigText = jsYaml.dump(configs[key]);
 
-    configWrites.push(writeFile(configPath, ymlConfigText, "utf-8"));
-  }
-  await Promise.all(configWrites);
+        configWrites.push(writeFile(configPath, ymlConfigText, 'utf-8'));
+    }
+    await Promise.all(configWrites);
 };

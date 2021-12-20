@@ -1,5 +1,5 @@
 export const gettingStarted = ({ env }) =>
-  `
+    `
 ## Getting Started
 
 Cloning, installing, and running quality checks.

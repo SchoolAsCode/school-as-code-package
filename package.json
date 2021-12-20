@@ -12,6 +12,7 @@
     "projecting": "bin/projecting.js"
   },
   "scripts": {
+    "format": "./node_modules/prettier/bin-prettier.js --write '**.*js'",
     "try:readme": "cd ./test-content && node ../bin/readme.js u=user r=repo",
     "try:configure": "cd ./test-content && node ../bin/configure.js <todo>",
     "try:avatars": "cd ./test-content && node ../bin/avatars.js",
@@ -31,7 +32,9 @@
   "homepage": "https://github.com/school-as-code/school-as-code-package#readme",
   "dependencies": {
     "js-yaml": "^4.1.0",
-    "node-fetch": "^3.1.0",
-    "prettier": "^2.5.1"
+    "node-fetch": "^3.1.0"
+  },
+  "devDependencies": {
+    "prettier": "2.5.1"
   }
 }

@@ -6,14 +6,14 @@
 
 */
 
-import fs from "fs";
-import path from "path";
-import util from "util";
+import fs from 'fs';
+import path from 'path';
+import util from 'util';
 
-import { compileEnv } from "../compile-env/index.js";
-import { parseConfigs } from "../parse-configs/index.js";
+import { compileEnv } from '../compile-env/index.js';
+import { parseConfigs } from '../parse-configs/index.js';
 
-import { readme } from "../readme/index.js";
+import { readme } from '../readme/index.js';
 
 const writeFile = util.promisify(fs.writeFile);
 
@@ -30,4 +30,4 @@ const configs = await parseConfigs(configPath, env);
 
 const readmeText = readme(configs);
 const readmePath = path.join(process.cwd(), ...env.readmePath);
-await writeFile(readmePath, readmeText, "utf-8");
+await writeFile(readmePath, readmeText, 'utf-8');

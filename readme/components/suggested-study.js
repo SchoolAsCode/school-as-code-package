@@ -1,3 +1,3 @@
-export const suggestedStudy = ({}, { name = "", url = "", description = "" }) =>
-  `
-- [${name || url}](${url})${description ? `: ${description}` : ""}`;
+export const suggestedStudy = ({}, { name = '', url = '', description = '' }) =>
+    `
+- [${name || url}](${url})${description ? `: ${description}` : ''}`;

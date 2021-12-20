@@ -1,24 +1,24 @@
-import fetch from "node-fetch";
+import fetch from 'node-fetch';
 
-import { MAIN_BOARD_NAME } from "../constants.js";
+import { MAIN_BOARD_NAME } from '../constants.js';
 
 export const createBoards = async ({ env = {}, materials = {} }) => {
-  // if no boards are present in config, create a default board:
-  const defaultBoard = {
-    name: MAIN_BOARD_NAME,
-    description: "for all snippets, vocabulary and deliverables",
-    main: true,
-  };
+    // if no boards are present in config, create a default board:
+    const defaultBoard = {
+        name: MAIN_BOARD_NAME,
+        description: 'for all snippets, vocabulary and deliverables',
+        main: true,
+    };
 
-  console.log(materials.board);
+    console.log(materials.board);
 
-  // if there is a .board property on materials
-  //  if the board does not exist
-  //    create it
-  //    set materials.board to the new board number
-  // else
-  //  create the board
-  //  set materials
+    // if there is a .board property on materials
+    //  if the board does not exist
+    //    create it
+    //    set materials.board to the new board number
+    // else
+    //  create the board
+    //  set materials
 };
 
 // const yaml = require("js-yaml");

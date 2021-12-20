@@ -6,15 +6,15 @@
 
 */
 
-import fs from "fs";
-import path from "path";
+import fs from 'fs';
+import path from 'path';
 
-import fetch from "node-fetch";
+import fetch from 'node-fetch';
 
-import { USER_TYPES } from "../constants.js";
+import { USER_TYPES } from '../constants.js';
 
-import { compileEnv } from "../compile-env/index.js";
-import { parseConfigs } from "../parse-configs/index.js";
+import { compileEnv } from '../compile-env/index.js';
+import { parseConfigs } from '../parse-configs/index.js';
 
 // --- compile env from CLI args & defaults ---
 
@@ -28,33 +28,33 @@ const configs = await parseConfigs(configAbsolutePath, env);
 // --- prepare assets path & directory ---
 
 const avatarsAbsolutePath = path.join(
-  process.cwd(),
-  ...env.assetsPath,
-  "avatars"
+    process.cwd(),
+    ...env.assetsPath,
+    'avatars'
 );
 if (!fs.existsSync(avatarsAbsolutePath, { recursive: true })) {
-  fs.mkdirSync(avatarsAbsolutePath);
+    fs.mkdirSync(avatarsAbsolutePath);
 }
 
 // --- create an array of all unique user names across all user types ---
 
 const uniqueUserNames = USER_TYPES.map((userType) => configs[userType])
-  .filter((userType) => Array.isArray(userType))
-  .flatMap((userType) => userType)
-  .map((user) => user.userName)
-  .filter((userName) => userName)
-  .reduce((all, next) => (all.includes(next) ? all : [...all, next]), []);
+    .filter((userType) => Array.isArray(userType))
+    .flatMap((userType) => userType)
+    .map((user) => user.userName)
+    .filter((userName) => userName)
+    .reduce((all, next) => (all.includes(next) ? all : [...all, next]), []);
 
 // --- fetch and save avatars ---
 
 for (const userName of uniqueUserNames) {
-  const avatarPath = path.join(avatarsAbsolutePath, `${userName}.jpeg`);
+    const avatarPath = path.join(avatarsAbsolutePath, `${userName}.jpeg`);
 
-  // https://chrisfrew.in/blog/saving-images-in-node-js-using-fetch-with-array-buffer-and-buffer/
-  fetch(`https://github.com/${userName}.png?size=150`)
-    .then((res) => res.arrayBuffer())
-    .then((arrayBuffer) => {
-      const buffer = Buffer.from(arrayBuffer);
-      fs.createWriteStream(avatarPath).write(buffer);
-    });
+    // https://chrisfrew.in/blog/saving-images-in-node-js-using-fetch-with-array-buffer-and-buffer/
+    fetch(`https://github.com/${userName}.png?size=150`)
+        .then((res) => res.arrayBuffer())
+        .then((arrayBuffer) => {
+            const buffer = Buffer.from(arrayBuffer);
+            fs.createWriteStream(avatarPath).write(buffer);
+        });
 }
