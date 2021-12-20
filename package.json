@@ -1,15 +1,15 @@
 {
-  "name": "school-as-code-package",
-  "version": "0.0.7",
-  "description": "",
+  "name": "@school-as-code/school-as-code-package",
+  "version": "0.0.8",
+  "description": "NPM package to automate the learning space of school-as-code",
   "type": "module",
   "main": "",
   "bin": {
-    "sac:readme": "./bin/readme.js",
-    "sac:repo": "./bin/repo.js",
-    "sac:avatars": "./bin/avatars.js",
-    "sac:configure": "./bin/configure.js",
-    "sac:projecting": "./bin/projecting.js"
+    "readme": "bin/readme.js",
+    "repo": "bin/repo.js",
+    "avatars": "bin/avatars.js",
+    "configure": "bin/configure.js",
+    "projecting": "bin/projecting.js"
   },
   "scripts": {
     "try:readme": "cd ./test-content && node ../bin/readme.js u=user r=repo",
@@ -21,14 +21,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/school-as-code-testing/school-as-code-package.git"
+    "url": "git+https://github.com/school-as-code/school-as-code-package.git"
   },
-  "author": "",
+  "author": "school-as-code",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/school-as-code-testing/school-as-code-package/issues"
+    "url": "https://github.com/school-as-code/school-as-code-package/issues"
   },
-  "homepage": "https://github.com/school-as-code-testing/school-as-code-package#readme",
+  "homepage": "https://github.com/school-as-code/school-as-code-package#readme",
   "dependencies": {
     "js-yaml": "^4.1.0",
     "node-fetch": "^3.1.0",
