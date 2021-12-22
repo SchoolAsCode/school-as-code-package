@@ -5,11 +5,10 @@
   "type": "module",
   "main": "",
   "bin": {
-    "readme": "bin/readme.js",
-    "repo": "bin/repo.js",
     "avatars": "bin/avatars.js",
-    "configure": "bin/configure.js",
-    "projecting": "bin/projecting.js"
+    "collaborators": "bin/collaborators.js",
+    "projecting": "bin/projecting.js",
+    "readme": "bin/render-readme.js"
   },
   "scripts": {
    "test": "jest",

@@ -1,31 +1,45 @@
-description: learn some javascript
-board: 1
-suggestedStudy:
-  - name: rick
-    url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
-    description: roll
-  - name: rick
-    url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
-  - url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+gitpod: true
 path:
-  - name: Workflows
-    chapters: 3
-    deliverables: true
-    description: learn the development workflows you will need as a student and a professional.
-    url: https://github.com/HackYourFutureBelgium/workflows/tree/master/.study
-  - name: Welcome to JS
-    chapters: 3
-    deliverables: true
-    url: https://github.com/HackYourFutureBelgium/welcome-to-js/tree/master/.study
-  - name: Debugging
-    chapters: 5
-    deliverables: true
-    url: https://github.com/HackYourFutureBelgium/debugging/tree/master/.study
-  - name: Behavior, Strategy, Implementation
-    chapters: 3
-    deliverables: true
-    url: https://github.com/HackYourFutureBelgium/behavior-strategy-implementation/tree/master/.study
-  - name: Create a Material
-    chapters: 1
-    deliverables: true
-    url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+  - name: Merge-a-Matic
+    description: >-
+      One of the difficult parts of collaboration is dealing with merge
+      conflicts. Never fear, though! In this repository, we'll walk through how
+      to resolve one such conflict.
+    url: https://github.com/lpmi-13/merge-a-matic
+  - name: Reflog Power
+    description: >-
+      The basic idea is to practice accidentally deleting one of our local
+      branches (which I've done a few times), and then finding it again in the
+      reflog. Scary, right! I used to think so, but don't worry...the reflog can
+      help us.
+    url: https://github.com/lpmi-13/reflog-power
+  - name: Rebasic
+    description: >-
+      Rebasing is scary for people. We need to practice it to feel less scared.
+      Practicing with immediate actionable feedback could help this process.
+    url: https://github.com/lpmi-13/rebasic
+  - name: Tree Slayer
+    description: >-
+      Have you ever wondered about the deep git magicks...?
+
+
+      Have you ever heard about git's ability to delete a file across the entire
+      git history in a recursive rebase-like fashion...?
+
+
+      Have you ever been reading the ancient scrolls late at night, and come
+      across the git filter-branch command...?
+    url: https://github.com/lpmi-13/tree-slayer
+board:
+  number: 1
+  name: school
+  description: ''
+  columns:
+    - TODO
+    - DOING
+    - BLOCKED
+    - DONE
+  labels:
+    - name: study
+      description: sharing study progress for each material
+      color: 1EE46B
