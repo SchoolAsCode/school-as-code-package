@@ -10,15 +10,15 @@
 
 */
 
-import path from "path";
+import path from 'path';
 
-import { compileEnv } from "../compile-env/index.js";
-import { parseConfigs } from "../parse-configs/index.js";
-import { persistConfigs } from "../persist-configs/index.js";
+import { compileEnv } from '../compile-env/index.js';
+import { parseConfigs } from '../parse-configs/index.js';
+import { persistConfigs } from '../persist-configs/index.js';
 
-import { createBoards } from "../api-calls/create-boards.js";
-import { createLabels } from "../api-calls/create-labels.js";
-import { createMilestones } from "../api-calls/create-milestones.js";
+import { createBoard } from '../api-calls/create-board.js';
+import { createLabels } from '../api-calls/create-labels.js';
+import { createMilestones } from '../api-calls/create-milestones.js';
 
 // --- compile env from CLI args & defaults ---
 
@@ -32,11 +32,11 @@ const configs = await parseConfigs(configPath, env);
 // --- do the things ---
 
 await Promise.all([
-  createBoards(configs),
+  createBoard(configs),
   createLabels(configs),
   createMilestones(configs),
 ]);
 
 // --- persist new configs (updated by side-effect in previous step) ---
 
-persistConfigs(configs);
+await persistConfigs(configPath, configs);

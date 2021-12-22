@@ -5,13 +5,13 @@
   "type": "module",
   "main": "",
   "bin": {
-    "readme": "bin/readme.js",
-    "repo": "bin/repo.js",
     "avatars": "bin/avatars.js",
-    "configure": "bin/configure.js",
-    "projecting": "bin/projecting.js"
+    "collaborators": "bin/collaborators.js",
+    "projecting": "bin/projecting.js",
+    "readme": "bin/render-readme.js"
   },
   "scripts": {
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",
     "try:readme": "cd ./test-content && node ../bin/readme.js u=user r=repo",
     "try:configure": "cd ./test-content && node ../bin/configure.js <todo>",
     "try:avatars": "cd ./test-content && node ../bin/avatars.js",
@@ -46,6 +46,7 @@
     "prettier": "^2.5.1"
   },
   "devDependencies": {
-    "semantic-release": "^18.0.1"
+    "semantic-release": "^18.0.1",
+    "jest": "^27.4.5"
   }
 }
