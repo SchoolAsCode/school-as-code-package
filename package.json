@@ -23,6 +23,17 @@
     "type": "git",
     "url": "git+https://github.com/school-as-code/school-as-code-package.git"
   },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "publishConfig": {
+    "access": "public",
+    "branches": [
+      "main"
+    ]
+  },
   "author": "school-as-code",
   "license": "MIT",
   "bugs": {
@@ -35,6 +46,7 @@
     "prettier": "^2.5.1"
   },
   "devDependencies": {
+    "semantic-release": "^18.0.1",
     "jest": "^27.4.5"
   }
 }
