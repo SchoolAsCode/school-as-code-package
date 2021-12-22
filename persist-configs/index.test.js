@@ -11,6 +11,5 @@ const pathToConfigs = path.join(__dirname, "..", "test-content", ".school");
 const jsonConfigs = await parseConfigs(pathToConfigs);
 
 jsonConfigs.toes = { e: 2, w: [1, 2, 3] };
-jsonConfigs.admins.push(4);
 
 persistConfigs(pathToConfigs, jsonConfigs);

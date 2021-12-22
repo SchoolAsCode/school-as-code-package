@@ -29,7 +29,7 @@ export const parseConfigs = async (configBasePath = "", env = {}) => {
     {}
   );
 
-  // this is where/how action info gets into the config
+  // this is how action info gets into the config
   compiledConfigs.env = env;
 
   return compiledConfigs;

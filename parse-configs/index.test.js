@@ -9,4 +9,4 @@ const pathToConfigs = path.join(__dirname, "..", "test-content", ".school");
 
 const jsonConfigs = await parseConfigs(pathToConfigs);
 
-console.log(jsonConfigs.materials);
+console.log(jsonConfigs);

@@ -9,7 +9,9 @@ const writeFile = util.promisify(fs.writeFile);
 export const persistConfigs = async (configBasePath = "", configs) => {
   const configWrites = [];
   for (const key in configs) {
-    if (key === "env") continue;
+    if (key === "env") {
+      continue;
+    }
 
     const configPath = path.join(configBasePath, `${key}.yml`);
     const ymlConfigText = jsYaml.dump(configs[key]);

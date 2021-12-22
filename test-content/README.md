@@ -1,173 +1,80 @@
-# Repo
+<!-- BEGIN TOP -->
 
-> - [Issues](https://github.com/user/repo/issues):
->   [`help-wanted`](https://github.com/user/repo/issues?q=is%3Aopen+label%3Ahelp-wanted),
->   [`question`](https://github.com/user/repo/issues?q=is%3Aopen+label%3Aquestion)
-> - [Pull Requests](https://github.com/user/repo/pulls)
-> - [Discussions](https://github.com/user/repo/discussions/)
-> - [Study Board](https://github.com/user/repo/projects/1)
->
-> <details>
-> <summary>Tech Support</summary>
->
-> [![Rubber Ducky](./.school/assets/rubber-ducky.png)](https://rubberduckdebugging.com/)
->
->  </details>
+# Asfd
+
+> - [Study Board](https://github.com/asdf/asfd/projects/1)
+> - [Issues](https://github.com/asdf/asfd/issues)
+>   - [`help-wanted`](https://github.com/asdf/asfd/issues?q=is%3Aopen+label%3Ahelp-wanted)
+>   - [`question`](https://github.com/asdf/asfd/issues?q=is%3Aopen+label%3Aquestion)
+> - [Pull Requests](https://github.com/asdf/asfd/pulls)
 
 ---
 
-## Getting Started
+<!-- END TOP -->
 
-Cloning, installing, and running quality checks.
+<!-- BEGIN MATERIALS -->
 
-<details>
-<summary>expand/collapse</summary>
-<br>
+## Materials
 
-1. `git clone git@github.com:user/repo.git`
-2. `cd repo`
-3. `npm install`
+### [Merge A Matic](https://github.com/lpmi-13/merge-a-matic)
 
-## Code Quality Checks
+- [open in gitpod](https://gitpod.io/#https://github.com/lpmi-13/merge-a-matic)
+  |
+  [study tickets](https://github.com/asdf/asfd/projects/1?card_filter_query=milestone%3Amerge-a-matic+label%3Astudy)
+  | [milestone](https://github.com/asdf/asfd/milestone/0)
 
-- `npm run format`: Makes sure all the code in this repository is well-formatted
-  (looks good).
-- `npm run lint:ls`: Checks to make sure all folder and file names match the
-  repository conventions.
-- `npm run lint:md`: Will lint all of the Markdown files in this repository.
-- `npm run lint:css`: Will lint all of the CSS files in this repository.
-- `npm run validate:html`: Validates all HTML files in your project.
-- `npm run spell-check`: Goes through all the files in this repository looking
-  for words it doesn't recognize. Just because it says something is a mistake
-  doesn't mean it is! It doesn't know every word in the world. You can add new
-  correct words to the [./.cspell.json](./.cspell.json) file so they won't cause
-  an error.
-- `npm run accessibility -- ./path/to/file.html`: Runs an accessibility analysis
-  on all HTML files in the given path and writes the report to
-  `/accessibility_report`
+One of the difficult parts of collaboration is dealing with merge conflicts.
+Never fear, though! In this repository, we'll walk through how to resolve one
+such conflict.
 
-## Continuous Integration (CI)
+### [Reflog Power](https://github.com/lpmi-13/reflog-power)
 
-When you open a PR to `main`/`master` in your repository, GitHub will
-automatically do a linting check on the code in this repository, you can see
-this in the[./.github/workflows/lint.yml](./.github/workflows/lint.yml) file.
+- [open in gitpod](https://gitpod.io/#https://github.com/lpmi-13/reflog-power) |
+  [study tickets](https://github.com/asdf/asfd/projects/1?card_filter_query=milestone%3Areflog-power+label%3Astudy)
+  | [milestone](https://github.com/asdf/asfd/milestone/0)
 
-If the linting fails, you will not be able to merge the PR. You can double check
-that your code will pass before pushing by running the code quality scripts
-locally.
+The basic idea is to practice accidentally deleting one of our local branches
+(which I've done a few times), and then finding it again in the reflog. Scary,
+right! I used to think so, but don't worry...the reflog can help us.
 
-</details>
+### [Rebasic](https://github.com/lpmi-13/rebasic)
+
+- [open in gitpod](https://gitpod.io/#https://github.com/lpmi-13/rebasic) |
+  [study tickets](https://github.com/asdf/asfd/projects/1?card_filter_query=milestone%3Arebasic+label%3Astudy)
+  | [milestone](https://github.com/asdf/asfd/milestone/0)
+
+Rebasing is scary for people. We need to practice it to feel less scared.
+Practicing with immediate actionable feedback could help this process.
+
+### [Tree Slayer](https://github.com/lpmi-13/tree-slayer)
+
+- [open in gitpod](https://gitpod.io/#https://github.com/lpmi-13/tree-slayer) |
+  [study tickets](https://github.com/asdf/asfd/projects/1?card_filter_query=milestone%3Atree-slayer+label%3Astudy)
+  | [milestone](https://github.com/asdf/asfd/milestone/0)
+
+Have you ever wondered about the deep git magicks...?
+
+Have you ever heard about git's ability to delete a file across the entire git
+history in a recursive rebase-like fashion...?
+
+Have you ever been reading the ancient scrolls late at night, and come across
+the git filter-branch command...?
 
 ---
 
-## Path
+<!-- END MATERIALS -->
 
-learn some javascript
-
-### [Workflows](https://github.com/HackYourFutureBelgium/workflows/tree/master/.study)
-
-- 3 chapters |
-  [vocabulary](https://github.com/user/repo/projects/1?card_filter_query=milestone%3Aworkflows+label%3Avocabulary)
-  |
-  [snippets](https://github.com/user/repo/projects/1?card_filter_query=milestone%3Aworkflows+label%3Asnippet)
-  |
-  [deliverables](https://github.com/user/repo/projects/1?card_filter_query=milestone%3Aworkflows+label%3Adeliverables)
-  |
-  [check-ins](https://github.com/user/repo/issues/?q=milestone%3Aworkflows+label%3Acheck-in)
-  |
-  [retrospectives](https://github.com/user/repo/issues/?q=milestone%3Aworkflows+label%3Aretrospective)
-  | [milestone](https://github.com/lab-antwerp-1/home/milestone/0)
-
-learn the development workflows you will need as a student and a professional.
-
-### [Welcome to JS](https://github.com/HackYourFutureBelgium/welcome-to-js/tree/master/.study)
-
-- 3 chapters |
-  [vocabulary](https://github.com/user/repo/projects/1?card_filter_query=milestone%3Awelcome-to-js+label%3Avocabulary)
-  |
-  [snippets](https://github.com/user/repo/projects/1?card_filter_query=milestone%3Awelcome-to-js+label%3Asnippet)
-  |
-  [deliverables](https://github.com/user/repo/projects/1?card_filter_query=milestone%3Awelcome-to-js+label%3Adeliverables)
-  |
-  [check-ins](https://github.com/user/repo/issues/?q=milestone%3Awelcome-to-js+label%3Acheck-in)
-  |
-  [retrospectives](https://github.com/user/repo/issues/?q=milestone%3Awelcome-to-js+label%3Aretrospective)
-  | [milestone](https://github.com/lab-antwerp-1/home/milestone/0)
-
-### [Debugging](https://github.com/HackYourFutureBelgium/debugging/tree/master/.study)
-
-- 5 chapters |
-  [vocabulary](https://github.com/user/repo/projects/1?card_filter_query=milestone%3Adebugging+label%3Avocabulary)
-  |
-  [snippets](https://github.com/user/repo/projects/1?card_filter_query=milestone%3Adebugging+label%3Asnippet)
-  |
-  [deliverables](https://github.com/user/repo/projects/1?card_filter_query=milestone%3Adebugging+label%3Adeliverables)
-  |
-  [check-ins](https://github.com/user/repo/issues/?q=milestone%3Adebugging+label%3Acheck-in)
-  |
-  [retrospectives](https://github.com/user/repo/issues/?q=milestone%3Adebugging+label%3Aretrospective)
-  | [milestone](https://github.com/lab-antwerp-1/home/milestone/0)
-
-### [Behavior, Strategy, Implementation](https://github.com/HackYourFutureBelgium/behavior-strategy-implementation/tree/master/.study)
-
-- 3 chapters |
-  [vocabulary](https://github.com/user/repo/projects/1?card_filter_query=milestone%3Abehavior,-strategy,-implementation+label%3Avocabulary)
-  |
-  [snippets](https://github.com/user/repo/projects/1?card_filter_query=milestone%3Abehavior,-strategy,-implementation+label%3Asnippet)
-  |
-  [deliverables](https://github.com/user/repo/projects/1?card_filter_query=milestone%3Abehavior,-strategy,-implementation+label%3Adeliverables)
-  |
-  [check-ins](https://github.com/user/repo/issues/?q=milestone%3Abehavior,-strategy,-implementation+label%3Acheck-in)
-  |
-  [retrospectives](https://github.com/user/repo/issues/?q=milestone%3Abehavior,-strategy,-implementation+label%3Aretrospective)
-  | [milestone](https://github.com/lab-antwerp-1/home/milestone/0)
-
-### [Create a Material](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
-
-- 1 chapter |
-  [vocabulary](https://github.com/user/repo/projects/1?card_filter_query=milestone%3Acreate-a-material+label%3Avocabulary)
-  |
-  [snippets](https://github.com/user/repo/projects/1?card_filter_query=milestone%3Acreate-a-material+label%3Asnippet)
-  |
-  [deliverables](https://github.com/user/repo/projects/1?card_filter_query=milestone%3Acreate-a-material+label%3Adeliverables)
-  |
-  [check-ins](https://github.com/user/repo/issues/?q=milestone%3Acreate-a-material+label%3Acheck-in)
-  |
-  [retrospectives](https://github.com/user/repo/issues/?q=milestone%3Acreate-a-material+label%3Aretrospective)
-  | [milestone](https://github.com/lab-antwerp-1/home/milestone/0)
-
----
-
-## Suggested Study
-
-<details>
-<summary>expand/collapse</summary>
-<br />
-
-- [rick](https://www.youtube.com/watch?v=dQw4w9WgXcQ): roll
-
-- [rick](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
-
-- [https://www.youtube.com/watch?v=dQw4w9WgXcQ](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
-
-</details>
-
----
+<!-- BEGIN LEARNERS -->
 
 ## Learners
 
-<h3 id="lpmi-13">Adam</h3>
+<h3 id="lpmi-13"><a href="https://github.com/lpmi-13">Adam</a></h3>
 
-- [questions](https://github.com/user/repo/issues/?q=author%3Alpmi-13+label%3Aquestion)
+- [questions](https://github.com/asdf/asfd/issues/?q=author%3Alpmi-13+label%3Aquestion)
   |
-  [help-wanted](https://github.com/user/repo/issues/?q=author%3Alpmi-13+label%3Ahelp-wanted)
+  [help-wanted](https://github.com/asdf/asfd/issues/?q=author%3Alpmi-13+label%3Ahelp-wanted)
   |
-  [check-ins](https://github.com/user/repo/issues/?q=author%3Alpmi-13+label%3Acheck-in)
-  |
-  [deliverables](https://github.com/user/repo/projects/1?card_filter_query=autho%3AAdam+label%3Adeliverable)
-  |
-  [retrospectives](https://github.com/user/repo/issues/?q=author%3Alpmi-13+label%3Aretrospective)
-  | [lpmi-13](https://github.com/lpmi-13)
+  [study tickets](https://github.com/asdf/asfd/projects/1?card_filter_query=autho%3AAdam+label%3Astudy)
 
 <details>
 <summary>more about Adam</summary>
@@ -183,16 +90,11 @@ learn the development workflows you will need as a student and a professional.
 
 <h3 id="colevandersWands"><a href="https://colevandersWands.github.io">Evan</a></h3>
 
-- [questions](https://github.com/user/repo/issues/?q=author%3AcolevandersWands+label%3Aquestion)
+- [questions](https://github.com/asdf/asfd/issues/?q=author%3AcolevandersWands+label%3Aquestion)
   |
-  [help-wanted](https://github.com/user/repo/issues/?q=author%3AcolevandersWands+label%3Ahelp-wanted)
+  [help-wanted](https://github.com/asdf/asfd/issues/?q=author%3AcolevandersWands+label%3Ahelp-wanted)
   |
-  [check-ins](https://github.com/user/repo/issues/?q=author%3AcolevandersWands+label%3Acheck-in)
-  |
-  [deliverables](https://github.com/user/repo/projects/1?card_filter_query=autho%3AEvan+label%3Adeliverable)
-  |
-  [retrospectives](https://github.com/user/repo/issues/?q=author%3AcolevandersWands+label%3Aretrospective)
-  | [colevandersWands](https://github.com/colevandersWands)
+  [study tickets](https://github.com/asdf/asfd/projects/1?card_filter_query=autho%3AEvan+label%3Astudy)
 
 <details>
 <summary>more about Evan</summary>
@@ -208,49 +110,4 @@ learn the development workflows you will need as a student and a professional.
 
 ---
 
-## Teachers
-
-<h3 id="lpmi-13"><a href="https://adamleskis.com/">Adam</a></h3>
-
-- [assigned](https://github.com/user/repo/issues/?q=assigned%3Alpmi-13) |
-  [commented](https://github.com/user/repo/issues/?q=commented%3Alpmi-13) |
-  [author](https://github.com/user/repo/issues/?q=author%3Alpmi-13)
-
-<details>
-<summary>more about Adam</summary>
-<br>
-
-![lpmi-13 avatar](./.school/assets/avatars/lpmi-13.jpeg)
-
-</details>
-
-<h3 id="colevandersWands">Evan</h3>
-
-- [assigned](https://github.com/user/repo/issues/?q=assigned%3AcolevandersWands)
-  |
-  [commented](https://github.com/user/repo/issues/?q=commented%3AcolevandersWands)
-  | [author](https://github.com/user/repo/issues/?q=author%3AcolevandersWands)
-
-<details>
-<summary>more about Evan</summary>
-<br>
-
-![colevandersWands avatar](./.school/assets/avatars/colevandersWands.jpeg)
-
-</details>
-
----
-
-## Admins
-
-<h3 id="">Adam</h3>
-
-- [assigned](https://github.com/user/repo/issues/?q=assigned%3A) |
-  [commented](https://github.com/user/repo/issues/?q=commented%3A) |
-  [author](https://github.com/user/repo/issues/?q=author%3A)
-
-<details>
-<summary>more about Adam</summary>
-<br>
-
-</details>
+<!-- END LEARNERS -->
