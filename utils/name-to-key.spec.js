@@ -1,7 +1,6 @@
-import { nameToKey } from '../utils/name-to-key';
+import { nameToKey } from './name-to-key';
 
 describe('convert name to a key', () => {
-
   test('it should switch everything to lowercase', () => {
     const input = 'thisIsName';
     const expected = 'thisisname';
@@ -25,24 +24,23 @@ describe('convert name to a key', () => {
   });
 
   test('it should not fail on a blank input', () => {
-    const input = "";
-    const expected = "";
+    const input = '';
+    const expected = '';
 
     expect(nameToKey(input)).toEqual(expected);
   });
 
   test('it should not fail on array input', () => {
-    const input = []
-    const expected = "";
+    const input = [];
+    const expected = '';
 
     expect(nameToKey(input)).toEqual(expected);
   });
 
   test('it should not fail on object input', () => {
-    const input = {}
-    const expected = "";
+    const input = {};
+    const expected = '';
 
     expect(nameToKey(input)).toEqual(expected);
   });
 });
-
