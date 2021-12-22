@@ -1,11 +1,6 @@
 import fetch from 'node-fetch';
 
-export const addCollaborators = async ({
-  env = {},
-  learners = [],
-  teachers = [],
-  admins = [],
-}) => {
+export const addCollaborators = async ({ env = {}, learners = [] }) => {
   const addCollaborator = async (user = '', permission = 'triage') =>
     fetch(
       `https://api.github.com/repos/${env.user}/${env.repo}/collaborators/${user}`,
@@ -23,16 +18,6 @@ export const addCollaborators = async ({
 
   for (const learner of learners) {
     const res = addCollaborator(learner.user, 'push');
-    collaboratorPromises.push(res);
-  }
-
-  for (const teacher of teachers) {
-    const res = addCollaborator(teacher.user, 'maintain');
-    collaboratorPromises.push(res);
-  }
-
-  for (const admin of admins) {
-    const res = addCollaborator(admin.user, 'admin');
     collaboratorPromises.push(res);
   }
 
