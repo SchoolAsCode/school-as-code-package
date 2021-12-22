@@ -33,7 +33,9 @@ const configs = await parseConfigs(configPath, env);
 // --- render & write new README ---
 
 const readmePath = path.join(process.cwd(), ...env.readmePath);
-const oldReadme = await readFile(readmePath, 'utf-8');
+const oldReadme = fs.existsSync(readmePath)
+  ? await readFile(readmePath, 'utf-8')
+  : '';
 
 const content = renderReadme(configs);
 
@@ -47,4 +49,4 @@ const formattedReadme = prettier.format(newReadme, {
   parser: 'markdown',
 });
 
-writeFile(readmePath, formattedReadme, 'utf-8');
+await writeFile(readmePath, formattedReadme, 'utf-8');

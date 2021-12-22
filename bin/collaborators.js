@@ -1,21 +1,11 @@
 #!/usr/bin/env node
 
-/* collaborators
+import path from 'path';
 
-  creates teams for all the user types that exist
+import { compileEnv } from '../compile-env/index.js';
+import { parseConfigs } from '../parse-configs/index.js';
 
-  - checks if teams already exist
-  - sets permissions for each team (are they different?)
-  - adds users to their respective teams
-
-*/
-
-import path from "path";
-
-import { compileEnv } from "../compile-env/index.js";
-import { parseConfigs } from "../parse-configs/index.js";
-
-import { addCollaborators } from "../api-calls/add-collaborators.js";
+import { addCollaborators } from '../api-calls/add-collaborators.js';
 
 // --- compile env from CLI args & defaults ---
 

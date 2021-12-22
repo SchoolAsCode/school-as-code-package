@@ -47,14 +47,19 @@ const uniqueUserNames = USER_TYPES.map((userType) => configs[userType])
 
 // --- fetch and save avatars ---
 
+const avatarPromises = [];
+
 for (const user of uniqueUserNames) {
   const avatarPath = path.join(avatarsAbsolutePath, `${user}.jpeg`);
 
   // https://chrisfrew.in/blog/saving-images-in-node-js-using-fetch-with-array-buffer-and-buffer/
-  fetch(`https://github.com/${user}.png?size=150`)
+  const res = fetch(`https://github.com/${user}.png?size=150`)
     .then((res) => res.arrayBuffer())
     .then((arrayBuffer) => {
       const buffer = Buffer.from(arrayBuffer);
       fs.createWriteStream(avatarPath).write(buffer);
     });
+  avatarPromises.push(res);
 }
+
+await Promise.all(avatarPromises);

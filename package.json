@@ -12,10 +12,10 @@
   },
   "scripts": {
     "try:avatars": "cd ./test-content && node ../bin/avatars.js",
-    "try:collaborators": "cd ./test-content && node ../bin/collaborators.js repo=api-sandbox user=school-as-code-testing --",
+    "try:collaborators": "cd ./test-content && node ../bin/collaborators.js",
     "try:full-setup": "cd ./test-content && node ../bin/full-setup.js",
-    "try:projecting": "cd ./test-content && node ../bin/projecting.js repo=api-sandbox user=school-as-code-testing",
-    "try:render": "cd ./test-content && node ../bin/render-readme.js repo=api-sandbox user=school-as-code-testing"
+    "try:projecting": "cd ./test-content && node ../bin/projecting.js",
+    "try:render": "cd ./test-content && node ../bin/render-readme.js"
   },
   "repository": {
     "type": "git",
