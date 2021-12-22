@@ -11,6 +11,7 @@
     "readme": "bin/render-readme.js"
   },
   "scripts": {
+    "format": "./node_modules/prettier/bin-prettier.js --write './'",
     "try:avatars": "cd ./test-content && node ../bin/avatars.js",
     "try:collaborators": "cd ./test-content && node ../bin/collaborators.js",
     "try:full-setup": "cd ./test-content && node ../bin/full-setup.js",
