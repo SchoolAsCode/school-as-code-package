@@ -14,9 +14,8 @@ import path from "path";
 
 import { compileEnv } from "../compile-env/index.js";
 import { parseConfigs } from "../parse-configs/index.js";
-import { persistConfigs } from "../persist-configs/index.js";
 
-import { createTeams } from "../api-calls/create-teams.js";
+import { addCollaborators } from "../api-calls/add-collaborators.js";
 
 // --- compile env from CLI args & defaults ---
 
@@ -29,8 +28,4 @@ const configs = await parseConfigs(configPath, env);
 
 // --- do the things ---
 
-await createTeams(configs);
-
-// --- persist new configs (updated by side-effect in previous step) ---
-
-persistConfigs(configs);
+await addCollaborators(configs);
