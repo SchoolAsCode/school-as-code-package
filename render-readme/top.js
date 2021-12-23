@@ -14,6 +14,7 @@ export const top = ({ env = {}, materials = {} }) =>
     env.repo
   }/issues?q=is%3Aopen+label%3Aquestion)
 > - [Pull Requests](https://github.com/${env.user}/${env.repo}/pulls)
+> - [Shared Notes](./shared-notes)
 
 ---
 
