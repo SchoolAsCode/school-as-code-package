@@ -19,18 +19,27 @@ export const createMilestones = async ({ materials = {}, env = {} }) => {
       description: material.description,
     };
 
+    const milestonesURL = `https://api.github.com/repos/${env.user}/${env.repo}/milestones`;
     // not .all so milestone numbers are in order
-    const res = await fetch(
-      `https://api.github.com/repos/${env.user}/${env.repo}/milestones`,
-      {
-        method: 'POST',
-        body: JSON.stringify(body),
-        headers,
-      },
-    );
+    const res = await fetch(milestonesURL, {
+      method: 'POST',
+      body: JSON.stringify(body),
+      headers,
+    });
     const data = await res.json();
 
-    if (data.number) {
+    if (
+      !material.milestone &&
+      data.errors &&
+      data.errors.find((error) => error.code === 'already_exists')
+    ) {
+      const res = await fetch(milestonesURL);
+      const milestones = await res.json();
+      const milestone = milestones.find(
+        (milestone) => milestone.title === nameToKey(material.name),
+      );
+      material.milestone = milestone.number;
+    } else if (!material.milestone && data.number) {
       // update config by side-effect
       material.milestone = data.number;
     }
