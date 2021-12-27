@@ -46,7 +46,7 @@ const oldReadme = fs.existsSync(readmePath)
   ? await readFile(readmePath, 'utf-8')
   : '';
 
-const content = renderReadme({ materials: configs.materials });
+const content = renderReadme(configs);
 
 const newReadme = ['materials']
   .map((sectionName) => [sectionName, content[sectionName]])
