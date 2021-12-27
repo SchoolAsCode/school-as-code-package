@@ -39,7 +39,7 @@ export const createMilestones = async ({ materials = {}, env = {} }) => {
         (milestone) => milestone.title === nameToKey(material.name),
       );
       material.milestone = milestone.number;
-    } else if (!material.milestone && data.number) {
+    } else if (data.number) {
       // update config by side-effect
       material.milestone = data.number;
     }
