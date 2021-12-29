@@ -1,6 +1,6 @@
 {
   "name": "@school-as-code/school-as-code-package",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "NPM package to automate the learning space of school-as-code",
   "type": "module",
   "main": "",
