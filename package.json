@@ -11,6 +11,7 @@
     "readme": "bin/render-readme.js"
   },
   "scripts": {
+    "format": "./node_modules/prettier/bin-prettier.js --write '**/*.js'",
     "test": "node --experimental-vm-modules node_modules/.bin/jest",
     "try:render-readme": "cd ./test-content && node ../bin/render-readme.js u=user r=repo",
     "try:configure": "cd ./test-content && node ../bin/configure.js <todo>",
