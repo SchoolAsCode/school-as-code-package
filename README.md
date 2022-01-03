@@ -1,5 +1,7 @@
 # School as Code: NPM package
 
+This is the package used in the GitHub actions to set up the School As Code [template repository](https://github.com/school-as-code/school-as-code).
+
 Why an NPM package?
 
 - it can be used to set up the repository locally
@@ -17,7 +19,7 @@ Why an NPM package?
 - **`/full-setup.js`**: Does all of these things. Does not render the README
   until after the projecting is setup, it needs board and milestone numbers to
   render the README.
-- **`/projecting.js``**: Setups up a project board, creates configured labels,
+- **`/projecting.js`**: Setups up a project board, creates configured labels,
   and one milestone per material. It persists an updated config with the
   milestone and board numbers added (this is used to render the README).
 - **`/render-readme.js`**: Renders a README with the configured materials,
