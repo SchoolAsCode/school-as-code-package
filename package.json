@@ -5,7 +5,7 @@
   "type": "module",
   "main": "",
   "bin": {
-    "full-setup": "bin/full.js",
+    "full-setup": "bin/full-setup.js",
     "collaborators": "bin/collaborators.js",
     "render-readme": "bin/render-readme.js",
     "update-materials": "bin/update-materials.js"
