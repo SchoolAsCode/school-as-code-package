@@ -5,10 +5,10 @@
   "type": "module",
   "main": "",
   "bin": {
-    "avatars": "bin/avatars.js",
+    "full-setup": "bin/full.js",
     "collaborators": "bin/collaborators.js",
-    "projecting": "bin/projecting.js",
-    "readme": "bin/render-readme.js"
+    "render-readme": "bin/render-readme.js",
+    "update-materials": "bin/update-materials.js"
   },
   "scripts": {
     "format": "./node_modules/prettier/bin-prettier.js --write '**/*.js'",
