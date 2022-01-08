@@ -5,7 +5,7 @@ export const learner = (
   // --- closed utilities for generating links ---
 
   const projectSearch = (label = '', linkText = label) =>
-    `[${linkText}](https://github.com/${env.user}/${env.repo}/projects/${materials.board.number}?card_filter_query=autho%3A${name}+label%3A${label})`;
+    `[${linkText}](https://github.com/${env.user}/${env.repo}/projects/${materials.board.number}?card_filter_query=author%3A${name}+label%3A${label})`;
 
   const issuesSearch = (label = '', linkText = label) =>
     `[${linkText}](https://github.com/${env.user}/${env.repo}/issues/?q=author%3A${user}+label%3A${label})`;
