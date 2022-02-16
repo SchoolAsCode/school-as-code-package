@@ -29,8 +29,12 @@ export const parseConfigs = async (configBasePath = '', env = {}) => {
     {},
   );
 
-  // this is how action info gets into the config
-  compiledConfigs.env = env;
+  const definedConfigs = Object.fromEntries(
+    Object.entries(compiledConfigs).filter((entry) => entry[1] !== undefined),
+  );
 
-  return compiledConfigs;
+  // this is how action info gets into the config
+  definedConfigs.env = env;
+
+  return definedConfigs;
 };

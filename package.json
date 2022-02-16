@@ -18,7 +18,7 @@
     "try:avatars": "cd ./test-content && node ../bin/avatars.js",
     "try:collaborators": "cd ./test-content && node ../bin/collaborators.js",
     "try:projecting": "cd ./test-content && node ../bin/projecting.js",
-    "try:do-everything": "cd ./test-content && node ../bin/do-everything.js",
+    "try:full-setup": "cd ./test-content && node ../bin/full-setup.js",
     "try:update-materials": "cd ./test-content && node ../bin/update-materials.js"
   },
   "repository": {
