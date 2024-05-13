@@ -6,6 +6,10 @@ import jsYaml from 'js-yaml';
 
 const readFile = util.promisify(fs.readFile);
 
+export const getObjectsFromEntries = (compiledConfigs) => {
+  return Object.fromEntries(Object.entries(compiledConfigs).filter((entry) => entry[1] !== undefined))
+}
+
 export const parseConfigs = async (configBasePath = '', env = {}) => {
   const configs = fs
     .readdirSync(configBasePath)
@@ -29,9 +33,7 @@ export const parseConfigs = async (configBasePath = '', env = {}) => {
     {},
   );
 
-  const definedConfigs = Object.fromEntries(
-    Object.entries(compiledConfigs).filter((entry) => entry[1] !== undefined),
-  );
+  const definedConfigs = getObjectsFromEntries(compiledConfigs);
 
   // this is how action info gets into the config
   definedConfigs.env = env;

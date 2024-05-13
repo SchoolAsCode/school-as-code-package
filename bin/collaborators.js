@@ -5,7 +5,7 @@ import path from 'path';
 import { compileEnv } from '../compile-env/index.js';
 import { parseConfigs } from '../parse-configs/index.js';
 
-import { addCollaborators } from '../api-calls/add-collaborators.js';
+import { addCollaborators, collaboratorApiCall } from '../api-calls/add-collaborators.js';
 
 // --- compile env from CLI args & defaults ---
 
@@ -18,4 +18,4 @@ const configs = await parseConfigs(configPath, env);
 
 // --- do the things ---
 
-await addCollaborators(configs);
+await addCollaborators(collaboratorApiCall, { env: configs.env, learners: configs.learners });
